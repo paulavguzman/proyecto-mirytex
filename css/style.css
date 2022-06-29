@@ -226,6 +226,7 @@ a {
     color: white;
     
 }
+
 .datos {
     width: 80%;
     display: flex;
@@ -239,6 +240,16 @@ a {
     text-decoration: none;
     color: orangered;
   
+}
+.contenedor a .envio {
+    color: grey;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: none;
+    font-size: 20px;
+    font-family:'Source Code Pro', monoespaciado;
+    font-weight: 100px;
+    
 }
 
 .contenedor h4 {
