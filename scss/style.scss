@@ -1,10 +1,8 @@
 
-//variables en seccion MATERIA-PRIMA
-
-//IMPORT
-
 @import "utilities/variables";
-
+@mixin colores ($background){
+     background-color: $background;
+}
 body{
     background-color: $color-principal;
 
@@ -48,7 +46,7 @@ nav ul {
     margin: 10px;
 }
 nav ul li {
-    background-color: darkgrey;
+    @include colores (darkgrey);
     float: right;
     font-size: 1.2rem;
     text-decoration: none;
@@ -68,6 +66,9 @@ nav ul li {
     background: grey;
     border: 2px solid grey;
 
+}
+body {
+    background-color: white;
 }
 
 main {
@@ -135,6 +136,66 @@ h1:hover{
 }
 
 
+/* ====== GALERIA ===== */
+.galeria {
+    width: 40%;
+	margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.galeria-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.card {
+    display: block;
+    width: 100%;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border: 3px solid chocolate;
+   
+    
+}
+.card img:hover{
+   transform: scale(1.15);
+    
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 198px;
+    }
+    main {
+        padding: 250px 0 80px 0;
+    }
+    .galeria-contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        z-index: -999;
+    }
+}
+/*texto galeria*/
+.pRollitos{
+    color: gray;
+    text-align: center;
+    text-transform: none;
+    font-size: 1.5rem;
+    font-family:'Source Code Pro', monoespaciado;
+    font-weight: 20px;
+    
+}
+
 .footer {
     text-decoration: none;
     text-align: end;
@@ -144,7 +205,13 @@ a {
     text-decoration: none;
     
 }
-
+.contenedor a {
+    text-decoration: none;
+    color: orangered;
+    font-size: 20px;
+    font-family:'Source Code Pro', monoespaciado;
+    margin-left: 10%;
+}
 .contenedor {
 
     .datos {
@@ -169,15 +236,20 @@ a {
 
 }
 
-.contenedor h4 {
-    color: $color-secundario;
-    text-align: center;
-
-}
-
 .contenedor h3 {
     color:  $color-secundario;
     text-align: center;
+    font-size: 20px;
+    font-family:'Source Code Pro', monoespaciado;
+  
+}
+
+.contenedor h4 {
+    color: $color-secundario;
+    text-align: center;
+    font-size: 20px;
+    font-family:'Source Code Pro', monoespaciado;
+    margin-right: 15%;
 
 }
 .mapa {
@@ -189,10 +261,101 @@ footer .derechos {
     padding-top: 10px;
 }
 
+.formulario {
+    padding: 0 20px;
+      
+}
+.form{
+    color: grey;
+    border: solid;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family:'Source Code Pro', monoespaciado;
+    font-weight: 100px;
+
+}
+.nombre{
+    color: grey;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: none;
+    font-size: 20px;
+    font-family:'Source Code Pro', monoespaciado;
+    font-weight: 100px;
+}
+.textos{
+    color: grey;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: none;
+    font-size: 20px;
+    font-family:'Source Code Pro', monoespaciado;
+    font-weight: 100px;
+}
+.email{
+    color: grey;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: none;
+    font-size: 1.25rem;
+    font-family:'Source Code Pro', monoespaciado;
+    font-weight: 100px;
+}
+.textoEmail{
+    color: grey;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: none;
+    font-size: 20px;
+    font-family:'Source Code Pro', monoespaciado;
+    font-weight: 100px;
+}
+.mensajes{
+    color: grey;
+    text-align: center;
+    text-transform: none;
+    font-size: 20px;
+    font-family:'Source Code Pro', monoespaciado;
+    font-weight: 100px;
+
+} 
+input {
+    color: grey;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: none;
+    font-size: 20px;
+    font-family:'Source Code Pro', monoespaciado;
+    font-weight: 100px;
+}
+
+textarea{
+    color: grey;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: none;
+    font-size: 20px;
+    font-family:'Source Code Pro', monoespaciado;
+    font-weight: 100px;
+}
+
+.check{
+    color: grey;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: none;
+    font-size: 20px;
+    font-family:'Source Code Pro', monoespaciado;
+    font-weight: 100px;
+}
 
 /*boton whatsapp*/
 .container-b{
-    background-color: #2e6329;
+    @include colores (#2e6329);
     border: 1px solid #ffff;
     position: fixed;
     z-index: 999;
