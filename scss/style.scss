@@ -55,16 +55,16 @@ nav ul li {
     float: left;
     align-items: center;
     padding: 5px;
-    background-color: grey;
+    background-color: darkgrey;
     border-radius: 30px;
     
 }
 /*ANIMACION HOVER A MENU NAVEGACION*/
 .navegacion nav ul li a:hover{
-    color:  $color-secundario;
+    color: $color-secundario;
     transform: scale(1.1);
-    background: grey;
-    border: 2px solid grey;
+    background-color: orangered;
+    border: 2px solid darkgrey;
 
 }
 body {
