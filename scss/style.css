@@ -231,29 +231,13 @@ a {
 .contenedor .datos a:hover {
   color: #00ffd5;
 }
-
-.contenedor h3 {
-  width: 80%;
+.contenedor .datos h3 {
   color: #ff4500;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  padding: 4opx 0;
   text-align: center;
-  font-size: 20px;
-  font-family: "Source Code Pro", monoespaciado;
 }
-
-.contenedor h4 {
-  width: 80%;
+.contenedor .datos h4 {
   color: #ff4500;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
   text-align: center;
-  font-size: 20px;
-  font-family: "Source Code Pro", monoespaciado;
-  margin-right: 15%;
 }
 
 .mapa {
