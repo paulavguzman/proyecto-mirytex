@@ -45,7 +45,8 @@ nav ul {
     margin: 10px;
 }
 nav ul li {
-    @include colores (darkgrey);
+    background-color: darkgrey;
+    color: white;
     float: right;
     font-size: 1.2rem;
     text-decoration: none;
@@ -54,8 +55,13 @@ nav ul li {
     float: left;
     align-items: center;
     padding: 5px;
-    background-color: darkgrey;
     border-radius: 30px;
+    
+}
+
+nav ul li a:hover{
+    background-color: darkgrey;
+    color: black;
     
 }
 /*ANIMACION HOVER A MENU NAVEGACION*/
