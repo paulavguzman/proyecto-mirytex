@@ -151,7 +151,7 @@ h1:hover {
 
 .galeria-contenedor {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 250px);
   gap: 2rem;
 }
 
@@ -167,7 +167,7 @@ h1:hover {
 }
 
 .card img:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 700px) {
@@ -234,13 +234,21 @@ a {
 .contenedor .datos a:hover {
   color: #00ffd5;
 }
-.contenedor .datos h3 {
-  color: #ff4500;
-  text-align: center;
+
+.contenedor .datos a h3 {
+  display: flex;
+  flex-direction: column;
+  color: orangered;
+  font-size: 20px;
+  font-family: "Source Code Pro", monoespaciado;
 }
-.contenedor .datos h4 {
-  color: #ff4500;
-  text-align: center;
+
+.contenedor .datos a h4 {
+  display: flex;
+  flex-direction: column;
+  color: orangered;
+  font-size: 20px;
+  font-family: "Source Code Pro", monoespaciado;
 }
 
 .mapa {

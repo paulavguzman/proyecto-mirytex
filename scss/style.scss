@@ -163,10 +163,9 @@ h1:hover{
     height: auto;
     border: 3px solid chocolate;
    
-    
 }
 .card img:hover{
-   transform: scale(1.15);
+   transform: scale(1.1);
     
 }
 
@@ -236,19 +235,26 @@ a {
                     color:$color-link;
                 }
             }
-        
-            h3{
-                color: $color-secundario;
-                text-align: center;
-            }
-            h4{
-                color: $color-secundario;
-                text-align: center;
-            }
         }
            
 } 
-   
+
+
+.contenedor .datos a h3{
+    display: flex;
+    flex-direction: column;
+    color: orangered;
+    font-size: 20px;
+    font-family: "Source Code Pro", monoespaciado;
+}
+.contenedor .datos a h4{
+    display: flex;
+    flex-direction: column;
+    color: orangered;
+    font-size: 20px;
+    font-family: "Source Code Pro", monoespaciado;
+}
+
 .mapa {
     width: 100%;
 }

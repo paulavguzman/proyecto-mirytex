@@ -112,7 +112,7 @@ main h2 {
 }
 
 .info {
-  width: 90%;
+  width: 60%;
   color: grey;
   text-align: center;
   text-transform: none;
@@ -148,8 +148,9 @@ h1:hover {
 
 .galeria-contenedor {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 250px);
   gap: 2rem;
+  
 }
 
 .card {
@@ -158,13 +159,15 @@ h1:hover {
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+  width: inherit;
+  height: 300px;
+  transform: scale(.9);
   border: 3px solid chocolate;
+  transition: cubic-bezier(0.6, -0.28, 0.74, 0.05) all .5s;
 }
 
 .card img:hover {
-  transform: scale(1.15);
+  transform: scale(1);
 }
 
 @media screen and (max-width: 700px) {
@@ -234,26 +237,20 @@ a {
   color: #00ffd5;
 }
 
-.contenedor h3 {
-  width: 80%;
-  color: #ff4500;
+.contenedor .datos a h3 {
   display: flex;
-  margin: 0 auto;
-  padding: 4opx 0;
-  text-align: center;
+  flex-direction: column;
+  color: orangered;
   font-size: 20px;
   font-family: "Source Code Pro", monoespaciado;
 }
 
-.contenedor h4 {
-  width: 80%;
-  color: #ff4500;
+.contenedor .datos a h4 {
   display: flex;
-  margin: 0 auto;
-  text-align: center;
+  flex-direction: column;
+  color: orangered;
   font-size: 20px;
   font-family: "Source Code Pro", monoespaciado;
-  margin-right: 15%;
 }
 
 .mapa {
